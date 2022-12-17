@@ -73,7 +73,7 @@ const StudentForm = () => {
             </div>
             <div className="mb-2">
                 <label htmlFor="st_std" className="form-label">Student's Admission Class</label>
-                <input type="number" className="form-control" id="st_std" placeholder="admission Class" onChange={(e) => setStudent({ ...student, std: e.target.value })} />
+                <input type="number" className="form-control" id="st_std" defaultValue="4" placeholder="admission Class" onChange={(e) => setStudent({ ...student, std: e.target.value })} />
             </div>
 
             <Button type="submit" sx={{ width: "150px", display: "block", marginInline: "auto" }} variant="contained">Add Student</Button>
